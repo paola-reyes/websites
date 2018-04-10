@@ -1,0 +1,111 @@
+body {
+	background-color: pink;
+	font-family: 'Slabo 27px', serif;
+	font-size: 5px;
+	margin: 0px;
+}
+
+.mediaBubbles {
+	position: fixed;
+	right: 0px;
+	width: 75px;
+}
+#bubbleSize {
+	height: 53px;
+	width: 53px;
+}
+	#facebook {
+		top: 20px;
+	}
+	#twitter {
+		top: 90px;
+	}
+	#insta {
+		top: 160px;
+	}
+	#tumblr {
+		top: 230px;
+	}
+	#myspace {
+		top: 300px;
+	}
+	#dots {
+		top: 370px;
+	}
+
+.titleBox {
+    background-color: white;
+    color: white;
+	height: 900px;
+}
+	h1 {
+    color: black;
+		font-family: 'Open Sans Condensed', sans-serif;
+		font-size: 140px;
+		padding-top: 20px;
+		margin-bottom: 80px;
+	}
+
+.tabs {
+		height: 50px;
+		margin-bottom: 50px;
+	}
+		a {
+			color: black;
+			position: absolute;
+			text-decoration: none;
+
+			font-family: 'Open Sans Condensed', sans-serif;
+			font-size: 30px;
+			font-weight: bold;
+		}
+		a:hover {
+			color: #bfc3c9;
+			border-radius: 20%;
+		}
+		a:clicked {
+			border-color: white;
+		}
+
+	#homeButton {
+		right: 1000px;
+	}
+	#aboutButton {
+		right: 800px;
+	}
+	#updatesButton {
+		right: 575px;
+	}
+	#resourcesButton {
+		right: 350px;
+	}
+	#contactButton {
+		right: 150px;
+	}
+
+	#picture{
+		width: 55%;
+		height: 45%;
+	}
+
+.loremIpsum {
+	background-color: black;
+	top:700px;
+	height: 750px;
+	margin: 0px;
+
+	padding-top: 60px;
+	padding-bottom: 50px;
+	padding-left: 75px;
+	padding-right: 100px;
+}
+	#loremText {
+		font: 25px 'Times New Roman', serif;
+	  color: white;
+	}
+
+.imageDiv{
+	background-image: url('icon.png');
+	height: 75%;
+	background-position: center;
+}
