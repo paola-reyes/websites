@@ -1,0 +1,173 @@
+<DOCTYPE! html>
+<html>
+	<head>
+		<title> Chihuahuas </title>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet'>
+	</head>
+
+
+<style>
+body {
+	background-color: pink;
+	font-family: 'Slabo 27px', serif;
+	font-size: 5px;
+	margin: 0px;
+}
+
+.mediaBubbles {
+	position: fixed;
+	right: 0px;
+	width: 75px;
+}
+#bubbleSize {
+	height: 53px;
+	width: 53px;
+}
+	#facebook {
+		top: 20px;
+	}
+	#twitter {
+		top: 90px;
+	}
+	#insta {
+		top: 160px;
+	}
+	#tumblr {
+		top: 230px;
+	}
+	#myspace {
+		top: 300px;
+	}
+	#dots {
+		top: 370px;
+	}
+
+.titleBox {
+    background-color: white;
+    color: white;
+	height: 900px;
+}
+	h1 {
+    color: black;
+		font-family: 'Open Sans Condensed', sans-serif;
+		font-size: 140px;
+		padding-top: 20px;
+		margin-bottom: 80px;
+	}
+
+.tabs {
+		height: 50px;
+		margin-bottom: 50px;
+	}
+		a {
+			color: black;
+			position: absolute;
+			text-decoration: none;
+
+			font-family: 'Open Sans Condensed', sans-serif;
+			font-size: 30px;
+			font-weight: bold;
+		}
+		a:hover {
+			color: #bfc3c9;
+			border-radius: 20%;
+		}
+		a:clicked {
+			border-color: white;
+		}
+
+	#homeButton {
+		right: 1000px;
+	}
+	#aboutButton {
+		right: 800px;
+	}
+	#updatesButton {
+		right: 575px;
+	}
+	#resourcesButton {
+		right: 350px;
+	}
+	#contactButton {
+		right: 150px;
+	}
+
+	#picture{
+		width: 55%;
+		height: 45%;
+	}
+
+.loremIpsum {
+	background-color: black;
+	top:700px;
+	height: 750px;
+	margin: 0px;
+
+	padding-top: 60px;
+	padding-bottom: 50px;
+	padding-left: 75px;
+	padding-right: 100px;
+}
+	#loremText {
+		font: 25px 'Times New Roman', serif;
+	  color: white;
+	}
+
+.imageDiv{
+	background-image: url('icon.png');
+	height: 75%;
+	background-position: center;
+
+}
+</style>
+
+
+<body>
+<!-- div box for FLOAT of social media bubbles on the side -->
+<div class = 'mediaBubbles'>
+  <!-- mediaBubbleSize is to control SIZE of all icons -->
+	<a href = 'https://facebook.com' target = '_blank' id = 'facebook'><img src = 'https://cdn0.iconfinder.com/data/icons/social-networks-and-media-flat-icons/133/Social_Media_Socialmedia_network_share_socialnetwork_network-09-128.png' id = 'bubbleSize'></a>
+	<a href = 'https://twitter.com' target = '_blank' id = 'twitter'><img src = 'https://cdn0.iconfinder.com/data/icons/social-networks-and-media-flat-icons/134/Social_Media_Socialmedia_network_share_socialnetwork_network-07-128.png' id = 'bubbleSize'></a>
+	<a href = 'https://instagram.com' target = '_blank' id = 'insta'><img src = 'https://cdn0.iconfinder.com/data/icons/social-networks-and-media-flat-icons/136/Social_Media_Socialmedia_network_share_socialnetwork_network-28-128.png' id = 'bubbleSize'></a>
+	<a href = 'https://tumblr.com' target = '_blank' id = 'tumblr'><img src = 'https://cdn0.iconfinder.com/data/icons/social-networks-and-media-flat-icons/136/Social_Media_Socialmedia_network_share_socialnetwork_network-32-128.png' id = 'bubbleSize'></a>
+	<a href = 'https://myspace.com' target = '_blank' id = 'myspace'><img src = 'https://cdn0.iconfinder.com/data/icons/social-networks-and-media-flat-icons/136/Social_Media_Socialmedia_network_share_socialnetwork_network-02-128.png' id = 'bubbleSize'></a>
+	<a href = 'https://google.com' target = '_blank' id = 'dots'><img src = 'https://cdn1.iconfinder.com/data/icons/iconza-circle-social/64/697058-flickr-128.png' id = 'bubbleSize'></a>
+</div>
+
+<!-- PAGE STARTS HERE: Title Box div: has title, tabs, and a picture -->
+<div class = 'titleBox'>
+	<center>
+		<h1> EMPANADAS </h1>
+	</center>
+
+	<div class = 'tabs'>
+		<a href = 'file:///C:/Users/Jesus/OneDrive/Documents/webs/html.html' id = 'homeButton'> HOME </a>
+		<a href = 'file:///C:/Users/Jesus/OneDrive/Documents/webs/Avatar/avatar.html' target = '_blank' id = 'aboutButton'> ABOUT </a>
+		<a href = 'file:///C:/Users/Jesus/OneDrive/Documents/webs/gallery/gallery.html' target = '_blank' id = 'updatesButton'> UPDATES </a>
+		<a href = 'file:///C:/Users/Jesus/OneDrive/Documents/webs/website/website.html' target = '_blank' id = 'resourcesButton'> RESOURCES </a>
+		<a href = 'file:///C:/Users/Jesus/OneDrive/Documents/webs/disney/Disney2.html' target = '_blank' id = 'contactButton'> CONTACT </a>
+	</div>
+
+	<center>
+		<img src = 'https://image.freepik.com/free-photo/laptop-mac-mountain-ios-imac_1320-288.jpg' id = 'picture'>
+	</center>
+</div>
+
+<!-- Lorem Ipsum text / INFO div -->
+<div class = 'loremIpsum' id = 'loremText'>
+	<p> 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+	<br>
+	<br>
+	<p> 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?'
+	<br>
+	<br>
+	<p> 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+</div>
+
+<!-- Div for a decorative photo -->
+<div class = 'imageDiv'>
+</div>
+
+</body>
+</html>
