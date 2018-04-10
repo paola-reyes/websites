@@ -1,0 +1,126 @@
+<html>
+<head>
+	<title> Doctor Who Quiz </title>
+	<link href= "style.css" rel="stylesheet" type="text/css"/>
+
+
+ <script>
+	 alert("Please note the following questions are based on seasons 1-7 of the New Doctor Who .");
+	function myFirst() {
+	var z= document.getElementById("firstname").value;
+	alert(z);
+	if(z=="")
+	{
+alert("Cannot be empty");
+	}
+	}
+	</script>
+
+
+</head>
+
+
+<style>
+body {
+ background-color:#102372;
+ background-repeat: no-repeat;
+ background-size: 100%;
+ background-attachment: fixed;
+ color: white;
+}
+
+.menu {
+ padding: 50px 20px 20px 30px;
+ position: relative;
+ background-color: #FFFFE9;
+   border: 2px; #759595;
+   border-radius: 25px;
+ top: 100px;
+ left: 50px;
+ height: 500px;
+ width: 150px;
+ text-align: left;
+}
+
+.dw {
+ padding: 50px 50px 70px 70px;
+ position: relative;
+ background-color: #060505;
+   border: 2px;
+   border-radius: 25px;
+ top: -475px;
+ left: 325px;
+ height: 900px;
+ width: 750px;
+ text-align: center;
+}
+ a:link {
+ 	color: #759595;
+ }
+ a:visited {
+ 	color: #759595;
+ }
+ a:hover {
+ 	color: #759595;
+ }
+</style>
+
+
+<body>
+
+ <img src="https://www.highreshdwallpapers.com/wp-content/uploads/2014/05/466584.jpg" alt="Doctor Who" height= 200 width= 1265/>
+
+<div class="menu">
+	<a href= "dw.html" target="_blank"> Home </a><br>
+ <br>
+	<a href= "doctors.html" target="_blank"> The Doctor <a/><br>
+ <br>
+	<a href= "companions.html" target="_blank"> Companions <a/><br>
+ <br>
+	<a href= "tardis.html" target="_blank"> Tardis <a/><br>
+ <br>
+	<a href= "villains.html" target="_blank"> Villains <a/><br>
+ <br>
+	<a href= "quiz.html" target="_blank"> Doctor Who Quiz <a/><br>
+</div>
+
+<div class="dw">
+<h1> Doctor Who Quiz </h1>
+ <p> This quiz is based on the episodes in the New Doctor Who-Seasons 1-7 </p>
+<br>
+
+<form>
+	First Name: <input id= "firstname" type="text" name="first" size="25"/>
+	Last Name: <input type="text" name="last" size="25" onFocus="myFirst()"/><br/>
+<br>
+
+Question 1: <br/>
+<p> What does the Tardis's name stand for? </p>
+	<textarea name="comment" rows="10" cols="20"></textarea><br/>
+<br>
+
+Question 2: <br/>
+<p> Who were the Doctor's companions? (In order of appearance)</p>
+	<input type="radio" name="companions" value="1,3,2,5,4"/> River, Donna, Martha, Clara, Amy <br/>
+	<input type="radio" name="companions" value="j,r,1,s,4"/> Jackie, River, Rose, Sarah Jane, Amy <br/>
+	<input type="radio" name="companions" value="j,m,r,w,p"/> Jack, Mickey, Rory, Wilfred, Pete <br/>
+	<input type="radio" name="companions" value="1,2,3,4,5"/> Rose, Martha, Donna, Amy, Clara <br/>
+<br>
+
+Question 3: <br/>
+<p> Which actor(s) have played the Doctor? (Check all that apply)</p>
+	<input type="checkbox" name="actor" value="chris"/> Christopher Eccelston <br/>
+	<input type="checkbox" name="actor" value="david"/> David Tennant <br/>
+	<input type="checkbox" name="actor" value="john"/> John Barrowman <br/>
+	<input type="checkbox" name="actor" value="arthur"/> Arthur Darvill <br/>
+	<input type="checkbox" name="actor" value="matt"/>Matt Smith <br/>
+	<input type="checkbox" name="actor" value="bernard"/> Bernard Cribbins <br/>
+	<input type="checkbox" name="actor" value="noel"/> Noel Clarke <br/>
+	<input type="checkbox" name="actor" value="billie"/> Billie Piper <br/>
+<br>
+	<input type="submit" value="Submit"/>
+	<button type ="button" onClick="myFirst()"> Buttons </button>
+</form>
+</div>
+</body>
+</html>
