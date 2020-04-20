@@ -1,0 +1,197 @@
+
+<DOCTYPE! html>
+  <head>
+    <title> chihuahuas </title>
+    <link href = 'profileStyle.css' rel = 'stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Pattaya" rel="stylesheet"> <!-- Title -->
+    <link href="https://fonts.googleapis.com/css?family=Rammetto+One" rel="stylesheet"> <!-- memeImage -->
+  </head>
+
+<style>
+
+body {
+      background-color: pink;
+      font-family: 5px 'Slabo 27px', serif;
+      color: white;
+      margin: 0px;
+}
+.socialMedia {
+  position: fixed;
+  right: 10px;
+  width: 75px;
+}
+#mediaBubbleSize {
+      height: 65px;
+      width: 65px;
+}
+  #github {
+      top: 20px;
+  }
+  #facebook {
+      top: 80px;
+  }
+  #insta {
+      top: 140px;
+  }
+  #tumblr {
+      top: 200px;
+  }
+  #twitter {
+      top: 260px;
+  }
+  #dots {
+    top: 320px;
+  }
+.firstBox {
+  /* ORANGE FLOWER BACKGROUND: https://s-media-cache-ak0.pinimg.com/originals/89/2d/0e/892d0e2871adffb78172d7ce21ec9950.jpg */
+  /* COOL COLORFUL WAVE BACKGROUND: https://awesomewallpapers.files.wordpress.com/2015/02/waves_mac_fullhd.jpg */
+      background-image: url(https://awesomewallpapers.files.wordpress.com/2015/02/waves_mac_fullhd.jpg);
+      background-repeat: no-repeat;
+      background-position: right;
+      height: 750px;
+      float: top;
+}
+    #title {
+    /* FONT OPTION 1: 'Cabin Sketch', cursive; */
+    /* FONT OPTION 2: 'Cinzel Decorative', cursive; */
+    /* FONT OPTION 3: 'Pattaya', sans-serif; */
+        font: 140px 'Pattaya', sans-serif;
+        color: white; /* coral white i guess */
+        padding-top: 40px;
+        margin-bottom: 90px;
+    }
+    #dogAndDolphins {
+      width: 30%;
+      position: relative;
+      top: 40px;
+    }
+
+.loremIpsum {
+      background-color: #09001d;
+      font-size: 25px;
+      top: 700px;
+
+      height: 500px;
+      margin: 0px;
+
+      padding-top: 60px;
+      padding-bottom: 50px;
+      padding-left: 75px;
+      padding-right: 100px;
+}
+  #loremText {
+    font: 25px 'Times New Roman', serif;
+  }
+  #indent {
+    text-indent: 5%;
+  }
+
+.memes {
+      background-image: url("http://s6.favim.com/610/141026/background-chihuahua-dark-dog-Favim.com-2181678.jpg");
+      background-repeat: no-repeat;
+      background-repeat: repeat;
+      height: 250%;
+
+      padding-left: 100px;
+      position: static;
+  }
+  #memeHeading {
+    font: 50px 'Rammetto One', cursive;
+  }
+  #memeName {
+    font: 20px 'Rammetto One', cursive;
+  }
+  .memeImage{
+    width: 70%;
+  }
+
+</style>
+
+
+<body>
+
+<!-- div box for FLOAT of social media bubbles on the side -->
+<div class = 'socialMedia'>
+  <!-- mediaBubbleSize is to control SIZE of all icons -->
+  <a href = 'https://wygirlswhocode.github.io' target = '_blank' id = 'github'><img src = 'https://cdn1.iconfinder.com/data/icons/iconza-circle-social/64/697061-github-128.png' id = 'mediaBubbleSize'></a>
+  <a href = 'https://facebook.com' target = '_blank' id = 'facebook'><img src = 'https://cdn1.iconfinder.com/data/icons/iconza-circle-social/64/697057-facebook-128.png' id = 'mediaBubbleSize'></a>
+  <a href = 'https://instagram.com' target = '_blank' id = 'insta'><img src = 'https://cdn1.iconfinder.com/data/icons/iconza-circle-social/64/697067-instagram-128.png' id = 'mediaBubbleSize'></a>
+  <a href = 'https://wygirlswhocode.github.io/profiles/paola.html' target = '_blank' id = 'tumblr'><img src = 'https://cdn1.iconfinder.com/data/icons/iconza-circle-social/64/697027-tumblr-128.png' id = 'mediaBubbleSize'></a>
+  <a href = 'https://twitter.com' target = '_blank' id = 'twitter'><img src = 'https://cdn1.iconfinder.com/data/icons/iconza-circle-social/64/697029-twitter-128.png' id = 'mediaBubbleSize'></a>
+  <a href = 'https://github.com/wygirlswhocode/wygirlswhocode.github.io/blob/master/profiles/paola.html' target = '_blank' id = 'dots'><img src = 'https://cdn1.iconfinder.com/data/icons/iconza-circle-social/64/697058-flickr-128.png' id = 'mediaBubbleSize'></a>
+</div>
+
+
+<!-- PAGE STARTS HERE: Title Box div: has title, tabs, and a picture -->
+<div class = 'firstBox'>
+  <center>
+      <h1 id = 'title'> Paola </h1>
+  </center>
+
+  <center>
+    <img src = 'del.gif' id = 'dogAndDolphins'>
+  </center>
+</div>
+
+
+<!-- Lorem Ipsum text / INFO div -->
+<div class = 'loremIpsum' id = 'loremText'>
+  <p> Sign: Aries
+  <p> House: Hufflepuff
+  <p> Weaknesses:
+    <br id = 'indent'> Spoiled milk (ewww gross)
+    <br id = 'indent'> Cannolis, horchata, dogs, salsa (these are good)
+  <p> Favorite colors: indigo, yellow, pink
+</div>
+
+<!-- Meme section : 6 rows (title w/ picture) & 2 columns -->
+<div class = 'memes'>
+  <center>
+    <h1 id = 'memeHeading'> FAVORITE MEMES </h1>
+  </center>
+
+    <table>
+<!-- first row -->
+      <tr>
+          <td id = 'memeName'> Student Athlete
+          <td id = 'memeName'> Kermit
+      </tr>
+      <tr>
+          <td> <img src = 'https://m.elitestatic.com/m/29f9bbd8221e6daa/student-athlete-hilarious-meme-tweet-4.jpg' class = 'memeImage'> </td>
+          <td> <img src = 'https://media0ch-a.akamaihd.net/29/54/5997cbc43fda3388f653b4c302ab4c8f.jpg' class = 'memeImage'> </td>
+      </tr>
+
+<!-- second row -->
+      <tr>
+          <td id = 'memeName'> Pepe
+          <td id = 'memeName'> Roll Safe
+      </tr>
+      <tr>
+          <td> <img src = 'http://media.breitbart.com/media/2016/10/sad-pepe-640x480.jpg' class = 'memeImage'>
+          <td> <img src = 'https://thechive.files.wordpress.com/2017/02/the-roll-safe-meme-is-here-with-the-best-life-advice-22-pics-27.jpg?quality=85&strip=info&w=600' class = 'memeImage'> </td>
+      </tr>
+
+<!-- third row -->
+      <tr>
+          <td id = 'memeName'> Salt Bae
+          <td id = 'memeName'> IDK WHAT THIS IS CALLED
+      </tr>
+      <tr>
+          <td> <img src = 'http://swolegeneration.com/wp-content/uploads/2017/01/chef-meme.jpg' class = 'memeImage'> </td>
+          <td> <img src = 'http://i1.kym-cdn.com/photos/images/newsfeed/001/184/543/d42.jpg' class = 'memeImage'> </td>
+      </tr>
+<!-- fourth row -->
+      <tr>
+          <td id = 'memeName'> Wholesome Memes
+          <td id = 'memeName'> This one
+      </tr>
+      <tr>
+          <td> <img src = 'https://pbs.twimg.com/media/CpYEZeQXYAQ0W5V.jpg' class = 'memeImage'> </td>
+          <td> <img src = 'http://i3.kym-cdn.com/photos/images/newsfeed/001/190/946/745.png' class = 'memeImage'> </td>
+      </tr>
+    </table>
+</div>
+
+
+</body>
+</html>
