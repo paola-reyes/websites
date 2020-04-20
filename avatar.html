@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Philosopher' rel='stylesheet' type='text/css'>
+	<title> Avatar Page </title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+
+function character(name, hit, kick){
+	this.name = name;
+	this.hit = hit;
+	this.kick = kick;
+	this.health = 10;
+}
+function compete(character2){
+	if(dice1 + dice2 < 5){
+		character1.health = character1.health - character2.kick;
+	}
+	else if (dice1 == dice2){
+		character1.health = character1.health - character2.hit;
+	}
+	else if (dice1 || dice2 < 3){
+		charater1.health = character1.health - (character2.hit + character2.hit);
+	}
+	else{
+		character1.health = character1.health + 1;
+	}
+
+	if (character1.health <= 0){
+		alert("Carmen wins");
+	}
+}
+function compete(character1){
+	var dice1 = Math.floor( (Math.random() * 6) + 1);
+	var dice2 = Math.floor( (Math.random() * 6) + 1);
+
+	if(dice1 - dice2 > 2) {
+		character2.health = character2.health - character1.kick;
+	}
+	else if (dice1 == dice2){
+		character2.health = character2.health - character1.hit;
+	}
+	else if (dice1 || dice2 < 3){
+		charater2.health = character2.health - (character1.hit + character1.hit);
+	}
+	else{
+		character2.health = character2.health + 1;
+	}
+
+	if(character2.health <= 0){
+		alert("Gabby wins");
+	}
+}
+
+var gabby = new character("Gabby", 2, 5);
+var carmen = new character("Carmen", 5, 2);
+
+document.getElementById("gabbyPicture").onclick = function(){
+	var roll1 = Math.floor( (Math.random() * 6) + 1 );
+	document.getElementById("gabbyResult").innerHTML = roll1;
+	document.getElementById("gabbyStatus").innerHTML = gabby.health;
+}
+document.getElementById("carmenPicture").onclick = function(){
+	var roll2 = Math.floor( (Math.random() * 6) + 1 );
+	document.getElementById("carmenResult").innerHTML = roll2;
+	document.getElementById("carmenStatus").innerHTML = carmen.health;
+}
+</script>
+</head>
+
+<style>
+	html{
+		font-family:'Philosopher', sans-serif;
+	}
+	h1 {
+		color: #003380;
+		font: 100px 'Pacifico', cursive;
+		margin: 50px;
+	}
+	h2 {
+		color: #003380;
+		font: 80px 'Pacifico', cursive;
+	}
+	.about {
+		width: 900px;
+		margin: 80px;
+		padding: 20px;
+		border-radius: 50px;
+		text-align: left;
+		background-color: #0052cc;
+	}
+	img {
+		border-radius: 20px;
+	}
+</style>
+
+<body background = "http://s3.amazonaws.com/cdn.roosterteeth.com/uploads/images/e525966e-3a9e-49f6-847f-451325cc2926/md/1528825-1456180932202-pixel_art_sky.png">
+
+	<center><h1> Gabby Laurens </h1>
+ <br>
+ <br>
+	<img src = "http://cs.iit.edu/~stars/spring2016_websites/finalProjects/gabby/gabby.jpg">
+<div class = "about">
+	<h3> About </h3>
+	<p> Gabby Laurens is a florist in down town Houston. Her job is to take care of her uncle's flower shop while he is away on an emergency vacation. She resides in the apartment above the shop with her cat, Luna.</p>
+	 <p>Age : 21</p>
+	 <p>Hometown : Chicago</p>
+	 <p>Favorite Artists : Beyonc&egrave;, Florence + the Machine, Adele, Shawn Mendes, Ed Sheeran
+	 <p>Favorite Color : Teal</p>
+	 <p>Favorite Food : Pasta </p>
+	<h3> Hobbies</h3>
+	<p> Besides her usual lifestyle, Gabby devotes herself to her other hobbies, which include: </p>
+	<ul>
+		<li> Knitter
+		<li> Tumblr addict
+		<li> Esty shop owner
+		<li> Making healthy smoothies
+		<li> Detective in Scotland Yard*
+		<li> Being as normal and inconspicuous as possible
+	</ul>
+	<h6> *She is an esteemed member of Scotland Yard, the Metropolitan Police Service in London. In other words, she's an undercover detective and is automatically cooler than all of us</h6>
+</div>
+
+<h2> Photos </h2>
+ <br>
+	<img src = "https://sarahlobue.files.wordpress.com/2011/11/carlinville-20110701-00550.jpg" width = 450 height = 550 >
+	<p> This is the flower shop Gabby works at with Luna </p>
+ <br>
+	<img src = "https://wallpaperscraft.com/image/cat_light_lying_51270_3840x2160.jpg" width = 450 height = 300>
+	<p> Gabby's cat, Luna. (A lot stronger and more graceful than she looks) </p>
+ <br>
+	<img src = "https://s-media-cache-ak0.pinimg.com/originals/27/ad/11/27ad11c189cbef6bbba4c16008e246a6.jpg" width = 450 height = 300>
+	<p> Gabby sells crocheted items on her Etsy shop online </p>
+ <br>
+	<img src = "http://bluecorbett.com/wp-content/uploads/2017/01/NewScotlandYard1.jpg" width = 450 height = 300>
+	<p> The building of Gabby's other job </p>
+ <br>
+	<img src = "https://i.ytimg.com/vi/KkNeCQIjPRg/maxresdefault.jpg" width = 450 height = 300>
+	<p> For lunch Gabby likes to make smoothies, because who doesn't like smoothies
+
+<h2> Game </h2>
+	<table>
+	<tr>
+		<td> <img id = "gabbyPicture" src = "http://cs.iit.edu/~stars/spring2016_websites/finalProjects/gabby/gabby2.png" width = 400 height = 400></td>
+		<td> <img id = "carmenPicture" src = "https://s-media-cache-ak0.pinimg.com/736x/39/12/45/391245b40bb5514f937ac63c283ef654.jpg" width = 400 height = 400></td>
+	</tr>
+	<tr>
+		<td> <p> Gabby, the girl </p></td>
+		<td> <p> Gabby's arch enemy, Carmen </p></td>
+	</tr>
+		<tr>
+		<td> <p id = "gabbyResult"></p>
+		<td> <p id = "carmenResult"></p>
+	</tr>
+	<tr>
+		<td> <p id = "gabbyStatus"></p>
+		<td> <p id = "carmenStatus"></p>
+	</tr>
+	</table>
+</center>
+
+</body>
+</html>
