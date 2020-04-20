@@ -1,0 +1,115 @@
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script>
+		$(document).ready(function() {
+		    arrayOfImages = $('image');
+			var activeImage;
+
+			function changeImage (direction) {
+				shrinkImage(activeImage);
+
+				var previousImageNum = activeImage.split(/(?=\d+)/);
+				var checkPrevNum = parseInt(previousImageNum[1]);
+
+					if(checkPrevNum == 1 && direction == -1) {
+						newImageNum == arrayOfImages.length;
+					}
+					else if(checkPrevNum == arrayOfImages.length && direction == 1) {
+						newImageNum = 1;
+					}
+					else{
+						newImageNum = checkPrevNum + direction;
+					}
+
+				activeImage = "#image" + newImageNum;
+				growImage(activeImage);
+			}
+
+			function growImage(image){
+				$(image).css('width', '500px', 'height', '300px');
+				$(image).css('z-index', '2');
+		    }
+
+		    function shrinkImage(image){
+				$(image).css('width', '275px');
+				$(image).css('z-index', '0');
+		    }
+
+			$('img.image').click(function() {
+				activeImage = "#"+ $(this).attr("id"); //#image1
+				growImage(activeImage);
+			});
+
+			$('#left').click(function() {
+				changeImage(-1);
+			});
+
+			$('#right').click(function() {
+				changeImage(1);
+			});
+		});
+		</script>
+
+		<link rel="stylesheet" href="website.css" />
+	</head>
+
+<!-- CSS added 6/11/17 -->
+<style>
+
+body {
+	background-color: #;
+	font-family: verdana, sans;
+	color: black;
+}
+
+#title {
+	color: black;
+}
+
+#left {
+	margin: 50px;
+	background-color: silver;
+	width: 50px;
+	height: 50px;
+		border: solid;
+		border-radius: 25px;
+		border-color: gray;
+}
+
+#right {
+	float: right;
+	margin: 50px;
+	background-color: silver;
+	width: 50px;
+	height: 50px;
+		border: solid;
+		border-radius: 25px;
+		border-color: gray;
+}
+
+.pictures {
+	margin: 100px;
+}
+
+.image {
+	width: 275px;
+	height: 183px;
+	left: 100px;
+}
+</style>
+
+	<body>
+		<h1 id = "title"> Food </h1>
+
+		<button id = "left" type="button"><b> < </button>
+		<button id = "right" type="button"> > </b></button>
+
+		<div class = "pictures">
+			<img id = "image1" class = "image" src = "https://i.ytimg.com/vi/qxvu23CSkYw/maxresdefault.jpg">
+			<img id = "image2" class = "image" src = "http://www.franchise-success.gr/media/k2/items/cache/737344dd8934cc52da9f7f85f2627abb_XL.jpg">
+			<img id = "image3" class = "image" src = "https://s-media-cache-ak0.pinimg.com/736x/a1/60/d1/a160d10a71e14bb47c3fd09f515d06d5.jpg">
+			<img id = "image4" class = "image" src = "http://www.awchamber.com/uploads/3/1/8/6/31868331/cherry-pie_orig.jpg">
+		</div>
+	</body>
+</html>
