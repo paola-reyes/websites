@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  	<title>Computer Discovery Camp Gallery</title>
+
+  	<link rel="stylesheet" href="gallery.css" />
+
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  	<script>
+		$(document).ready(function() {
+		    arrayOfImages = $('img.gallery_image');
+		    var activeImage;
+
+		    function growImage(image){
+				$(image).css('width', '500px');
+				$(image).css('z-index', '2');
+		    }
+
+		    function shrinkImage(image){
+				$(image).css('width', '200px');
+				$(image).css('z-index', '0');
+		    }
+
+		    function changeImage(direction){ //the direction is going to be -1 or 1 (left or right)
+				shrinkImage(activeImage);
+
+				var previousImageNum = activeImage.split(/(?=\d+)/);
+				var checkPrevNum = parseInt(previousImageNum[1]);
+
+					if(checkPrevNum == 1 && direction == -1) {
+						newImageNum == arrayOfImages.length;
+					}
+					else if(checkPrevNum == arrayOfImages.length && direction == 1) {
+						newImageNum = 1;
+					}
+					else{
+						newImageNum = checkPrevNum + direction;
+					}
+
+				activeImage = "#image" + newImageNum;
+				growImage(activeImage);
+			}
+
+
+		    // If you click an image
+		    $('img.gallery_image').click(function() {
+				/*$('#overlay').css('display', 'block');*/
+				activeImage = "#"+ $(this).attr("id");
+				growImage(activeImage);
+		    });
+
+		    /* If you click on the overlay
+		    $("#overlay").click(function() {
+				$('#overlay').css('display', 'none');
+					shrinkImage(activeImage);
+		    });*/
+
+		    document.onkeydown = function(e) {
+				if($('#overlay').css('display') !='none') {
+					e = e || window.event;
+					if(e.keyCode == '37'){
+						changeImage(-1);
+					}
+					else if(e.keyCode == '39'){
+						changeImage(1);
+					}
+					if(e.keyCode == '83') {
+						growImage('width', '700px');
+					}
+				}
+		}});
+		</script>
+</head>
+
+<style>
+html, body {
+	height: 100%;
+	background-color: #939EFD;
+	font-family: verdana, sans;
+	}
+
+#overlay {
+	width: 100%; height: 100%;
+	padding: 20px;
+	background-color: #7B7A70;
+	opacity: 0.75;
+	position: absolute;
+	top: 0; left: 0;
+	z-index: 1; /*pulls the overlay forward*/
+	display: none; /*hides the overlay until we need it!*/
+}
+
+/*#activeImage {
+	border-style: dotted solid double dashed;
+	border-width: 30px;
+}*/
+
+.images {
+	margin: 50px 100px;
+	}
+
+.images img {
+	width: 200px;
+	position: relative;
+	border-radius: 10px;
+}
+
+</style>
+
+
+<body>
+	<div id="overlay"></div>
+
+	<h1>Computer Discovery Camp Gallery</h1>
+
+	<div class="images">
+		<!-- Gallery images -->
+		<img id="image1" class="gallery_image" src="https://s-media-cache-ak0.pinimg.com/originals/1e/78/01/1e780114c67e162fc5b14e8eb6f10b75.jpg">
+		<img id="image2" class="gallery_image" src="http://image5.tuku.cn/pic/wallpaper/fengjing/daziranzhongdexianrenzhangshubizhi/019.jpg">
+		<img id="image3" class="gallery_image" src="http://data.whicdn.com/images/221763922/original.jpg">
+		<img id="image4" class="gallery_image" src="http://s1.favim.com/orig/25/birds-illustration-pattern-Favim.com-222759.jpg">
+		<img id="image5" class="gallery_image" src="https://getwallpapersinhd.com/images/medium/a-spring_walk-965943.jpg">
+	</span>
+
+</body>
+</html>
