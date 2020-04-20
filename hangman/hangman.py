@@ -40,7 +40,7 @@ def makeAccount(username, password):
 #This is a also a helper function for startMenu()  
 #This function asks for a username and password and checks if they are in the dictionary
 def logIn(uname, pword):
-    accounts_file = open("accounts.txt", "r")
+    accounts_file = open("login_info", "r")
     accounts = list(accounts_file)
     accounts_file.close()
 
