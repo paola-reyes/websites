@@ -1,0 +1,101 @@
+body {
+      font-family: 5px 'Slabo 27px', serif;
+      color: white;
+      margin: 0px;
+}
+.socialMedia {
+  position: fixed;
+  right: 10px;
+  width: 75px;
+}
+#mediaBubbleSize {
+      height: 65px;
+      width: 65px;
+}
+  #github {
+      top: 20px;
+  }
+  #facebook {
+      top: 80px;
+  }
+  #insta {
+      top: 140px;
+  }
+  #tumblr {
+      top: 200px;
+  }
+  #twitter {
+      top: 260px;
+  }
+  #dots {
+    top: 320px;
+  }
+.firstBox {
+  /* ORANGE FLOWER BACKGROUND: https://s-media-cache-ak0.pinimg.com/originals/89/2d/0e/892d0e2871adffb78172d7ce21ec9950.jpg */
+  /* COOL COLORFUL WAVE BACKGROUND: https://awesomewallpapers.files.wordpress.com/2015/02/waves_mac_fullhd.jpg */
+      background-image: url(https://awesomewallpapers.files.wordpress.com/2015/02/waves_mac_fullhd.jpg);
+      background-repeat: no-repeat;
+      background-position: right;
+      height: 750px;
+      float: top;
+}
+    #title {
+    /* FONT OPTION 1: 'Cabin Sketch', cursive; */
+    /* FONT OPTION 2: 'Cinzel Decorative', cursive; */
+    /* FONT OPTION 3: 'Pattaya', sans-serif; */
+        font: 140px 'Pattaya', sans-serif;
+        color: white; /* coral white i guess */
+        padding-top: 40px;
+        margin-bottom: 90px;
+        opacity: 40%;
+    }
+    #dogAndDolphins {
+      width: 30%;
+      position: relative;
+      top: 40px;
+      opacity: 0.9;
+
+      -moz-transform: scaleX(-1);
+      -o-transform: scaleX(-1);
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+      filter: FlipH;
+      -ms-filter: "FlipH";
+    }
+
+.loremIpsum {
+      background-color: #09001d;
+      font-size: 25px;
+      top: 700px;
+
+      height: 500px;
+      margin: 0px;
+
+      padding-top: 60px;
+      padding-bottom: 50px;
+      padding-left: 75px;
+      padding-right: 100px;
+}
+  #loremText {
+    font: 25px 'Times New Roman', serif;
+  }
+  #indent {
+    text-indent: 5%;
+  }
+
+.memes {
+      background-image: url("div3.png");
+      background-repeat: repeat;
+      margin-top: -60px;
+      padding-left: 100px;
+      position: static;
+  }
+  #memeHeading {
+    font: 50px 'Rammetto One', cursive;
+  }
+  #memeName {
+    font: 20px 'Rammetto One', cursive;
+  }
+  .memeImage{
+    width: 70%;
+  }
